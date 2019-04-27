@@ -1,5 +1,8 @@
 FROM alpine:latest
 
+# Create app directory
+WORKDIR /usr/src/app
+
 RUN apk add --no-cache mongodb
 RUN mkdir -p /data/db && \
     chown -R mongodb /data/db
