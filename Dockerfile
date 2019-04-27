@@ -12,4 +12,4 @@ EXPOSE 28017
 
 
 #CMD [ "mongod", "--bind_ip_all", "--logpath", "/var/log/mongod.log"]
-CMD ["ash", "run.sh"]
+CMD ["ash", "/usr/src/app/run.sh"]
