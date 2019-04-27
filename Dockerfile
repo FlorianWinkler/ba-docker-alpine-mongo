@@ -10,6 +10,7 @@ RUN mkdir -p /data/db && \
 EXPOSE 27017
 EXPOSE 28017
 
+COPY . .
 
 #CMD [ "mongod", "--bind_ip_all", "--logpath", "/var/log/mongod.log"]
-CMD ["ash", "/usr/src/app/run.sh"]
+CMD ["ash", "run.sh"]
